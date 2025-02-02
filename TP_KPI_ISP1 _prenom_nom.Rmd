@@ -1,0 +1,54 @@
+---
+title: "TP_R_KPI_ISP"
+author: "prenom_nom"
+date: "2023-11-07"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+##loading libraries 
+```{r}
+# Install libraries 
+install.packages("tidyverse")
+install.packages("lubridate")
+install.packages("corrplot")
+install.packages("plotly")
+install.packages("MASS") 
+install.packages("reshape2") 
+install.packages("reshape") 
+
+```
+
+```{r}
+# Load libraries
+library(tidyverse)
+library(lubridate)
+library(corrplot)
+library(plotly)
+
+library(MASS) 
+library(reshape2) 
+library(reshape)
+```
+
+```{r}
+# Update the 'rlang' package
+#install.packages("rlang")
+# You may also want to update all packages to ensure compatibility
+#update.packages(ask = FALSE)
+```
+#si ça marche pas il faut installer le dernier R et Rstudio #https://posit.co/download/rstudio-desktop/
+
+#Q1: Charger l'ensemble de données des critiques de vin.
+#Q2: Comment nettoyer et préparer l'ensemble de données en retirant les valeurs manquantes et en convertissant les variables nécessaires ?
+#Q3: Quelles sont les statistiques résumées de l'ensemble de données, y compris la moyenne et l'écart-type des notes (points) attribuées aux vins ?
+#Q4: Quelle est la fréquence des critiques de vin par pays ?
+#Q5: Quel est le prix moyen du vin par pays ?
+#Q6: Quelles variétés de vin en France ont la meilleure qualité moyenne selon les critiques et comment cela se compare-t-il à leur fréquence de production ?
+#Q7: Est-il possible d'identifier des régions spécifiques en France qui se spécialisent dans des vins de haute qualité ou de valeur élevée basés sur le prix et les points moyens ?
+#Q8: Quels sont les prix des vins pour les 10 pays les plus représentés ? (Visualisation nécessaire)
+#Q9: Existe-t-il une relation entre le prix et la qualité des vins ? (Visualisation nécessaire)
+#Q10: Comment les prix et les points varient-ils entre différents pays ? (Recherche de données et visualisation nécessaires)
+#Q11: Comment sont distribuées les notes attribuées aux vins ? (Visualisation nécessaire)
+#Q12: Sélectionnez une région pour voir la stratégie de prix moyenne des vins (rshiny)

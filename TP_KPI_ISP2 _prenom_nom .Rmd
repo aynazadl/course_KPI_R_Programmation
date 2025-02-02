@@ -1,0 +1,53 @@
+---
+title: "TP_R_KPI_ISP"
+author: "prenom_nom"
+date: "2023-11-07"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+##loading libraries 
+```{r}
+# Install libraries 
+#install.packages("tidyverse")
+#install.packages("lubridate")
+#install.packages("corrplot")
+#install.packages("plotly")
+#install.packages("MASS") 
+#install.packages("reshape2") 
+#install.packages("reshape") 
+
+```
+
+```{r}
+# Load libraries
+library(tidyverse)
+library(lubridate)
+library(corrplot)
+library(plotly)
+
+library(MASS) 
+library(reshape2) 
+library(reshape)
+```
+
+```{r}
+# Update the 'rlang' package
+#install.packages("rlang")
+# You may also want to update all packages to ensure compatibility
+#update.packages(ask = FALSE)
+```
+#si ça marche pas il faut installer le dernier R et Rstudio #https://posit.co/download/rstudio-desktop/
+
+#Q1: Charger l'ensemble de données des critiques de vin.
+#Q2: Comment nettoyer et préparer l'ensemble de données en retirant les valeurs manquantes et en convertissant les variables nécessaires ?
+#Q3: Quelles sont les statistiques résumées de l'ensemble de données, y compris la moyenne et l'écart-type des notes (points) attribuées aux vins ? quel est le structure des données? 
+#Q4: Trouver le prix le plus élevé par cave. 
+#Q5: Quel est le prix moyen du vin par pays ?
+#Q6: Quelles sont les variétés de vin les plus produites en France et comment leur popularité se reflète-t-elle dans leur production ?
+#Q7: Quelle est la stratégie de prix moyenne pour les vins dans différentes provinces de France et comment cela se #Q8: compare-t-il à la qualité moyenne des vins de ces régions ?
+#Q9: Nombre de cave à par pays (Visualisation)
+#Q10: Quels sont les pays qui ont la moyenne de points la plus élevée ? (Recherche de données et visualisation nécessaires)
+#Q11: Comment la distribution des prix varie-t-elle dans les cinq principaux pays ? (Recherche de données et visualisation nécessaires)
+#Q12: Sélectionnez une région pour voir le prix moyenne des vins en france (rshiny)
